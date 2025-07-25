@@ -38,8 +38,7 @@ resource "aws_iam_role" "iam-anywhere-demo" {
         ],
         "Condition" : {
           "StringEquals" : {
-            "aws:PrincipalTag/x509Subject/CN" : "IAM Anywhere Demo",
-            "aws:PrincipalTag/x509Subject/OU" : "Local"
+            "aws:PrincipalTag/x509Subject/CN" : "IAM Anywhere Demo"
           },
           "ArnEquals" : {
             "aws:SourceArn" : aws_rolesanywhere_trust_anchor.iam-anywhere-demo.arn
