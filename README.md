@@ -40,7 +40,7 @@ aws_signing_helper credential-process \
 
 ```
 [profile developer]
-    credential_process = ~/Development/mccracken_local_ca/aws_signing_helper credential-process --certificate ~/Development/mccracken_local_ca/client.crt --private-key ~/Development/mccracken_local_ca/client.key --trust-anchor-arn arn:aws:rolesanywhere:eu-west-1:ACCOUNTID:trust-anchor/demo19d1-e16e-4ada-bf12-a08ba6e5b55e --profile-arn arn:aws:rolesanywhere:eu-west-1:ACCOUNTID:profile/demo772c-00d6-4f74-a2a7-5401e146ea94 --role-arn arn:aws:iam::ACCOUNTID:role/demo-iam-anywhere 
+    credential_process = aws_signing_helper credential-process --certificate client.crt --private-key client.key --trust-anchor-arn arn:aws:rolesanywhere:eu-west-1:ACCOUNTID:trust-anchor/demo19d1-e16e-4ada-bf12-a08ba6e5b55e --profile-arn arn:aws:rolesanywhere:eu-west-1:ACCOUNTID:profile/demo772c-00d6-4f74-a2a7-5401e146ea94 --role-arn arn:aws:iam::ACCOUNTID:role/demo-iam-anywhere 
     region = eu-west-1
 ```
 
@@ -48,7 +48,7 @@ aws_signing_helper credential-process \
 
 ```
 [profile iam-anywhere]
-credential_process = ~/.aws/aws_signing_helper credential-process --certificate ~/.ssh/mccracken-cloud-iam-anywhere.crt --private-key ~/.ssh/mccracken-cloud-iam-anywhere.key --trust-anchor-arn arn:aws:rolesanywhere:eu-west-1:ACCOUNTID:trust-anchor/demo19d1-e16e-4ada-bf12-a08ba6e5b55e --profile-arn arn:aws:rolesanywhere:eu-west-1:ACCOUNTID:profile/demo772c-00d6-4f74-a2a7-5401e146ea94 --role-arn arn:aws:iam::ACCOUNTID:role/demo-iam-anywhere 
+credential_process = ~/.aws/aws_signing_helper credential-process --certificate ~/.ssh/iam-anywhere.crt --private-key ~/.ssh/iam-anywhere.key --trust-anchor-arn arn:aws:rolesanywhere:eu-west-1:ACCOUNTID:trust-anchor/demo19d1-e16e-4ada-bf12-a08ba6e5b55e --profile-arn arn:aws:rolesanywhere:eu-west-1:ACCOUNTID:profile/demo772c-00d6-4f74-a2a7-5401e146ea94 --role-arn arn:aws:iam::ACCOUNTID:role/demo-iam-anywhere 
 region = eu-west-1
 ```
 
