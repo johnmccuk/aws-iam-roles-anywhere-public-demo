@@ -207,6 +207,6 @@ aws_signing_helper
 **/.terraform
 # Ignore all .terraform directories
 **/*.tfstate
-
+**/*.tfstate.backup
 .DS_Store
 # macOS specific file that stores custom attributes of a folder, such as icon position and view

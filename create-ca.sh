@@ -12,12 +12,15 @@ openssl rand -hex 16 > root-ca/db/serial
 # Create the certificate signing request
 openssl req -new \
   -config root-ca/root-ca.conf \
-  -out root-ca.csr \
+  -out root-ca/private/root-ca.csr \
   -keyout root-ca/private/root-ca.key
 
 # Sign our request
 openssl ca -selfsign \
-  -config root-ca.conf \
-  -in root-ca.csr \
-  -out root-ca.crt \
+  -config root-ca/root-ca.conf \
+  -in root-ca/private/root-ca.csr \
+  -out root-ca/private/root-ca.crt \
   -extensions ca_ext
+
+# Copy out the certificate in PEM format
+openssl x509 -in root-ca/private/root-ca.crt -out root-ca/certs/root-ca.pem -outform PEM

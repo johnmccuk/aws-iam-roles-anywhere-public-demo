@@ -1,9 +1,9 @@
-# AWS IAM Anywhere Demo
-Demo usage of AWS IAM Anywhere
+# AWS IAM Roles Anywhere Demo
+Demo usage of AWS IAM Roles Anywhere
 
 Blog posts used to figure all of this out:
 
-- [Create a CA for use with AWS IAM Anywhere](https://medium.com/cyberark-engineering/calling-aws-services-from-your-on-premises-servers-using-iam-roles-anywhere-3e335ed648be)
+- [Create a CA for use with AWS IAM Roles Anywhere](https://medium.com/cyberark-engineering/calling-aws-services-from-your-on-premises-servers-using-iam-roles-anywhere-3e335ed648be)
 
 - [IAM Roles Anywhere with an external certificate authority](https://aws.amazon.com/blogs/security/iam-roles-anywhere-with-an-external-certificate-authority/)
 
