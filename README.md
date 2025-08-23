@@ -37,7 +37,7 @@ aws_signing_helper credential-process \
 --role-arn arn:aws:iam::ACCOUNTID:role/demo-iam-anywhere
 ```
 
-### serve the permission
+### Serve the permission
 
 ```
 ./aws_signing_helper serve \
