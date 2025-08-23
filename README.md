@@ -20,10 +20,6 @@ Blog posts used to figure all of this out:
 
 - [Examples derived from Ivans Ristic's Github](https://github.com/ivanr/bulletproof-tls/tree/master/private-ca)
 
-
-> [!NOTE]
-> download the 
-
 ## Example Usage of [aws_signing_helper](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html)
 
 ### Get auth
