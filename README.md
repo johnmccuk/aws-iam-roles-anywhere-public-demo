@@ -11,6 +11,8 @@ Blog posts used to figure all of this out:
 
 - [Get temporary security credentials from IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html#credential-helper-credential-process)
 
+- [Examples derived from Ivans Ristic's Github](https://github.com/ivanr/bulletproof-tls/tree/master/private-ca)
+
 > [!NOTE]
 > download the [aws_signing_helper](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html)
 

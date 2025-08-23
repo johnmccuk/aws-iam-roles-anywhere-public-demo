@@ -14,6 +14,6 @@ output "role-arn" {
 }
 
 output "credential_process" {
-  value       = "~/.aws/aws_signing_helper credential-process --certificate ~/.ssh/iam-anywhere.crt --private-key ~/.ssh/iam-anywhere.key --trust-anchor-arn ${aws_rolesanywhere_trust_anchor.this.arn} --profile-arn ${aws_rolesanywhere_profile.this.arn} --role-arn ${aws_iam_role.this.arn}"
+  value       = "aws_signing_helper credential-process --certificate ~/.ssh/iam-roles-anywhere-demo.crt --private-key ~/.ssh/iam-roles-anywhere-demo.key --trust-anchor-arn ${aws_rolesanywhere_trust_anchor.this.arn} --profile-arn ${aws_rolesanywhere_profile.this.arn} --role-arn ${aws_iam_role.this.arn}"
   description = "Credential process command for IAM Anywhere"
 }

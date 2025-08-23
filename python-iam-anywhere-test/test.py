@@ -1,6 +1,6 @@
 import boto3
 
-session = boto3.Session(profile_name='iam-anywhere')
+session = boto3.Session(profile_name='iam-roles-anywhere-demo')
 dev_s3_client = session.client('s3')
 
 def list_buckets():

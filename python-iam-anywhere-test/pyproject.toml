@@ -1,20 +1,19 @@
 [project]
 name = "python-iam-anywhere-test"
 version = "0.1.0"
-description = ""
+description = "IAM Roles Anywhere demo"
 authors = [
     {name = "John McCracken",email = "johnmccuk@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "boto3 (>=1.38.36,<2.0.0)"
+    "boto3 (>=1.40.15,<2.0.0)"
 ]
-
-[tool.poetry]
-packages = [{include = "python_iam_anywhere_test", from = "src"}]
-
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false

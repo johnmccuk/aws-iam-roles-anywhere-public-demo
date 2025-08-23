@@ -32,7 +32,7 @@ resource "aws_iam_role" "this" {
         ],
         "Condition" : {
           "StringEquals" : {
-            "aws:PrincipalTag/x509Subject/CN" : "IAM Roles Anywhere Demo"
+            "aws:PrincipalTag/x509Subject/CN" : "IAM Anywhere Demo"
           },
           "ArnEquals" : {
             "aws:SourceArn" : aws_rolesanywhere_trust_anchor.this.arn

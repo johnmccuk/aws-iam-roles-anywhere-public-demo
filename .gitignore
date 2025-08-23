@@ -196,6 +196,7 @@ cython_debug/
 # AWS IAM Anywhere
 root-ca/*
 !root-ca/root-ca.conf
+!root-ca/client-ca.conf
 python-iam-anywhere-test/src
 */*/_-init.py
 *.crt
