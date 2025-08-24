@@ -5,7 +5,12 @@
 This repo is for use with the blog post [Demo usage of AWS IAM Roles Anywhere](https://dev.to/johnmccuk/aws-iam-roles-anywhere-demo-15hj-temp-slug-8920603?preview=04a3ca7a8d6c776ec3aa7a2979ad23405ed4c6b96382dc569040faafe085536b10029f8b8eeb97b657df721dd7d6808b9b7960a7357cb1233602ca8e).
 
 ## File Layout
-TODO
+
+root-ca/ - contains a self-signed root CA
+terraform/ - contains terraform to create the IAM Roles Anywhere resources in AWS
+/python-iam-anywhere-demo/ - a simple python script to demo usage of IAM Roles Anywhere
+/create-ca.sh - script to create the self-signed root CA
+/destroy-ca.sh - script to destroy the self-signed root CA
 
 ## Further Reading
 Blog posts used to figure all of this out:
